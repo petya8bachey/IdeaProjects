@@ -1,0 +1,11 @@
+javac -d .\bin .\src\petya8bachey\Main.java
+java -cp .\bin petya8bachey.Main Scvortcov
+javap -c .\bin\petya8bachey\Main.class
+javac -d bin .\src\petya8bachey\*
+jar -cfe Lab_1.jar petya8bachey.Main -C .\bin .
+java -jar Lab_1.jar Peter
+mvn package
+java -cp .\target\Lab-1.0-SNAPSHOT.jar petya8bachey.Main Scvortcov
+mvn package
+java -cp D:\Users\kot\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;.\target\Lab-1.0.jar petya8bachey.Main PETER
+java -jar .\target\Lab-1.0-jar-with-dependencies.jar PETER
